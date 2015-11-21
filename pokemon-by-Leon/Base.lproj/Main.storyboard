@@ -163,6 +163,9 @@
                                             <constraint firstAttribute="width" constant="31" id="a5n-9r-76Z"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="zfg-Qy-zyg" eventType="touchUpInside" id="xBl-0y-a2A"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -191,10 +194,10 @@
                                         </segments>
                                         <color key="tintColor" red="0.92549019610000005" green="0.41568627450000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jjQ-2g-zaV">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jjQ-2g-zaV">
                                         <rect key="frame" x="0.0" y="49" width="560" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="102" translatesAutoresizingMaskIntoConstraints="NO" id="WuK-v5-SxP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="102" translatesAutoresizingMaskIntoConstraints="NO" id="WuK-v5-SxP">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <animations/>
                                                 <constraints>
@@ -202,7 +205,7 @@
                                                     <constraint firstAttribute="height" constant="120" id="rLW-Bc-A74"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-Fe-VBs">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-Fe-VBs">
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
                                                 <animations/>
                                                 <string key="text">Every Pokémon creature has an array of stats. HP (Hit Points) is a Pokémon's life force. If your Pokémon's HP hits zero, it faints and is no longer usable in battle (it can still use Hidden Machines, though). The Speed stat decides which Pokémon will make the first move in battle. </string>
@@ -214,7 +217,7 @@
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-gs-WTb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-gs-WTb">
                                         <rect key="frame" x="0.0" y="189" width="560" height="22"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjD-dp-HqW">
@@ -420,7 +423,18 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="Qr9-hl-fkv" id="ZZP-Ji-vjX"/>
+                        <outlet property="currentEvoImg" destination="LvV-ro-Zjz" id="Jb7-Az-dpG"/>
+                        <outlet property="defenseLbl" destination="O2Z-tx-m8G" id="Pfa-lt-413"/>
+                        <outlet property="descriptionLbl" destination="ufo-Fe-VBs" id="c4v-QB-HcP"/>
+                        <outlet property="evoLbl" destination="SU9-dK-o29" id="mh8-Re-khP"/>
+                        <outlet property="heightLbl" destination="t1l-jj-wfq" id="S4J-3k-yUC"/>
+                        <outlet property="mainImg" destination="WuK-v5-SxP" id="y5L-fT-m8Y"/>
                         <outlet property="nameLbl" destination="CFQ-if-bpp" id="VKV-ga-X0b"/>
+                        <outlet property="nextEvoImg" destination="AZX-kF-kjp" id="ssS-Y1-Cz3"/>
+                        <outlet property="pokeIdLbl" destination="s5b-K5-NbA" id="EWD-n9-zz1"/>
+                        <outlet property="typeLbl" destination="JrL-h6-cFS" id="35y-5R-xOx"/>
+                        <outlet property="weightLbl" destination="JCO-14-ih6" id="blQ-QY-FJq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Gj-1Q-saf" userLabel="First Responder" sceneMemberID="firstResponder"/>
