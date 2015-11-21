@@ -82,6 +82,17 @@ class ViewController:  UIViewController, UICollectionViewDelegate,UICollectionVi
     //do things when you select a cell
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        let poke: Pokemon!
+        
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemons[indexPath.row]
+        }
+        
+        self.performSegueWithIdentifier("PokemonDetailVC", sender: poke)
+        
+        
     }
     
     //number of itmes in one section
@@ -130,11 +141,15 @@ class ViewController:  UIViewController, UICollectionViewDelegate,UICollectionVi
     }
     
     
-    
-    
-    
-    
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailVC = segue.destinationViewController as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailVC.pokemon = poke
+                }
+            }
+        }
+    }
 
 }
 
