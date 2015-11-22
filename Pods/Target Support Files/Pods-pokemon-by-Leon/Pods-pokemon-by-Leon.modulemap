@@ -1,0 +1,6 @@
+framework module Pods_pokemon_by_Leon {
+  umbrella header "Pods-pokemon-by-Leon-umbrella.h"
+
+  export *
+  module * { export * }
+}

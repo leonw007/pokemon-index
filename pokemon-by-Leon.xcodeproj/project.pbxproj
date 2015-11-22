@@ -17,9 +17,12 @@
 		6697BC901BEDA0CC00E97714 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6697BC8F1BEDA0CC00E97714 /* pokemon.csv */; };
 		6697BC931BEDC12400E97714 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6697BC921BEDC12400E97714 /* Pokemon.swift */; };
 		66A2CD141BEFA7960093F05D /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A2CD131BEFA7960093F05D /* csv.swift */; };
+		DBC7DE78FF4C6DA2216E8A92 /* Pods_pokemon_by_Leon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084281C3757474A2B34EF009 /* Pods_pokemon_by_Leon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06073973DB34336A32930979 /* Pods-pokemon-by-Leon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-by-Leon.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokemon-by-Leon/Pods-pokemon-by-Leon.release.xcconfig"; sourceTree = "<group>"; };
+		084281C3757474A2B34EF009 /* Pods_pokemon_by_Leon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemon_by_Leon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664450661BF82DC100787B65 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		664450691BF98E0800787B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		668A4F3D1BEE537D00E6E467 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		6697BC8F1BEDA0CC00E97714 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		6697BC921BEDC12400E97714 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		66A2CD131BEFA7960093F05D /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		C7AA3E06FB5371219AFA0541 /* Pods-pokemon-by-Leon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-by-Leon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokemon-by-Leon/Pods-pokemon-by-Leon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +43,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC7DE78FF4C6DA2216E8A92 /* Pods_pokemon_by_Leon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B5C38080A3D701D74EB477 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7AA3E06FB5371219AFA0541 /* Pods-pokemon-by-Leon.debug.xcconfig */,
+				06073973DB34336A32930979 /* Pods-pokemon-by-Leon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		668A4F3C1BEE533300E6E467 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +72,8 @@
 			children = (
 				6697BC7C1BED9C0300E97714 /* pokemon-by-Leon */,
 				6697BC7B1BED9C0300E97714 /* Products */,
+				58B5C38080A3D701D74EB477 /* Pods */,
+				7CAADFAB630665DB4CC06FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		7CAADFAB630665DB4CC06FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084281C3757474A2B34EF009 /* Pods_pokemon_by_Leon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6697BC8C1BED9C0300E97714 /* Build configuration list for PBXNativeTarget "pokemon-by-Leon" */;
 			buildPhases = (
+				98432683B24CC34653A17569 /* Check Pods Manifest.lock */,
 				6697BC761BED9C0300E97714 /* Sources */,
 				6697BC771BED9C0300E97714 /* Frameworks */,
 				6697BC781BED9C0300E97714 /* Resources */,
+				E8E61694409CBFD033700B31 /* Embed Pods Frameworks */,
+				2C22D79D125A33CDF5A701FD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +212,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C22D79D125A33CDF5A701FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokemon-by-Leon/Pods-pokemon-by-Leon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98432683B24CC34653A17569 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E61694409CBFD033700B31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pokemon-by-Leon/Pods-pokemon-by-Leon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6697BC761BED9C0300E97714 /* Sources */ = {
@@ -305,6 +380,7 @@
 		};
 		6697BC8D1BED9C0300E97714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7AA3E06FB5371219AFA0541 /* Pods-pokemon-by-Leon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pokemon-by-Leon/Info.plist";
@@ -316,6 +392,7 @@
 		};
 		6697BC8E1BED9C0300E97714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06073973DB34336A32930979 /* Pods-pokemon-by-Leon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pokemon-by-Leon/Info.plist";
