@@ -34,6 +34,12 @@ class PokemonDetailVC: UIViewController {
 
         // Do any additional setup after loading the view.
         nameLbl.text = pokemon.name
+        mainImg.image = UIImage(named: "\(pokemon.pokedexId)")
+        
+        pokemon.downloadPokemonDetails { () -> () in
+            // after the content of the closure download is down, the code below will execute
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,14 +52,5 @@ class PokemonDetailVC: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

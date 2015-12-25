@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662E37B91C0177C300D943F2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E37B81C0177C300D943F2 /* Constant.swift */; };
 		664450671BF82DC100787B65 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664450661BF82DC100787B65 /* PokemonDetailVC.swift */; };
 		6644506A1BF98E0800787B65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664450681BF98E0800787B65 /* Main.storyboard */; };
 		668A4F3E1BEE537D00E6E467 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A4F3D1BEE537D00E6E467 /* PokeCell.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		06073973DB34336A32930979 /* Pods-pokemon-by-Leon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemon-by-Leon.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokemon-by-Leon/Pods-pokemon-by-Leon.release.xcconfig"; sourceTree = "<group>"; };
 		084281C3757474A2B34EF009 /* Pods_pokemon_by_Leon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemon_by_Leon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		662E37B81C0177C300D943F2 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		664450661BF82DC100787B65 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		664450691BF98E0800787B65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		668A4F3D1BEE537D00E6E467 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				66A2CD131BEFA7960093F05D /* csv.swift */,
+				662E37B81C0177C300D943F2 /* Constant.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662E37B91C0177C300D943F2 /* Constant.swift in Sources */,
 				668A4F3E1BEE537D00E6E467 /* PokeCell.swift in Sources */,
 				6697BC801BED9C0300E97714 /* ViewController.swift in Sources */,
 				6697BC7E1BED9C0300E97714 /* AppDelegate.swift in Sources */,
